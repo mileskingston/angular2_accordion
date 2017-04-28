@@ -24,18 +24,23 @@ export class AccComponent implements OnInit {
   		.subscribe(faqs => {
   			this.faqs = faqs;
   			this.selected = [];
-		  	for(var i = 0; i < this.faqs.length; i++) {
+		  	for(let i = 0; i < this.faqs.length; i++) {
 		  		this.selected.push(false);
 		  	}
   		});
   }
 
   selectFaq(index) {
-  	for(var i: any = 0; i < this.faqs.length; i++) {
-  		if(this.selected[i] != undefined) {
-  			this.selected[i] = false;
-  		}
+  	if(this.selected[index] == false) {
+	  	for(let i = 0; i < this.faqs.length; i++) {
+	  		if(this.selected[i] != undefined) {
+	  			this.selected[i] = false;
+	  		}
+	  	}
+  		this.selected[index] = true;
   	}
-  	this.selected[index] = !this.selected[index];
+  	else {
+  		this.selected[index] = false;
+  	}
   }
 }

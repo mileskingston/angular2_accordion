@@ -1,0 +1,7 @@
+{
+	"data": [
+		{"id": 1, "question": "Morbi congue nulla elementum, feugiat?", "answer": "Pellentesque sit amet elementum dui."},
+		{"id": 2, "question": "Etiam nisi leo, accumsan eget?", "answer": "Integer iaculis justo in justo."},
+		{"id": 3, "question": "Nullam sit amet nunc vitae?", "answer": "Donec eget dolor vulputate, scelerisque."}
+	]
+}

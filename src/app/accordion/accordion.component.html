@@ -1,0 +1,11 @@
+<div class="accordion">
+	<div class="acc-pane" *ngFor="let faq of faqs; let i = index">
+		<div class="heading">
+			<button 
+				(click)="selectFaq(i)">{{faq.question}}</button>
+		</div>
+		<div class="content" [ngClass]="{'show': selected[i], 'hide': !selected[i]}">
+			{{faq.answer}}
+		</div>
+	</div>
+</div>

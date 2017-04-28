@@ -1,0 +1,40 @@
+.accordion {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.acc-pane {
+	margin-bottom: 5px;
+	border: 1px solid #999;
+	border-radius: 3px;
+}
+.acc-pane:last-child {
+	margin-bottom: 0;
+}
+
+.acc-pane .heading button {
+	padding: 5px 10px;
+	width: 100%;
+	text-align: left;
+	background-color: #ccc;
+	border: none;
+	display: block;
+}
+.acc-pane .heading button:hover, 
+.acc-pane .heading button:focus {
+	background-color: #999;
+}
+
+.acc-pane .content {
+	padding: 10px;
+	transition: all 200ms;
+}
+.acc-pane .show {
+	height: auto;
+}
+.acc-pane .hide {
+	height: 0px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
